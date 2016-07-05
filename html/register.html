@@ -1,0 +1,19 @@
+<md-card>
+	<h2>Register</h2>
+	<form ng-submit="register(user)" name="registerForm">
+		<div class="form-group">
+			<input type="text" class="form-control" name="username" placeholder="Username" ng-model="user.username" ng-minlength="3" ng-maxlength="8" required>
+		</div>
+		<div ng-messages="registerForm.username.$error">
+        	<p ng-message="minlength">Your name is too short.</p>
+        	<p ng-message="maxlength">Your name is too long.</p>
+    	</div>
+		<div class="form-group">
+			<input type="text" class="form-control" id="email" placeholder="Email" ng-model="user.email" required>
+		</div>
+		<div class="form-group">
+			<input type="password" class="form-control" id="password" placeholder="Password" ng-model="user.password" required>
+		</div>
+		<md-button type="submit" class="md-raised md-primary" style="display: block; margin: 0 auto;">Register</md-button>
+	</form>	
+</md-card>

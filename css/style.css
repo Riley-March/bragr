@@ -1,0 +1,997 @@
+.card {
+	width: 100%;
+	height: 50%;
+}
+
+.cardImage {
+	width: 25%;
+	height: 50%;
+	background: blue;
+	float: left;
+}
+
+.cardTitle {
+	width: 75%;
+	height: 25%;
+	float: left;
+	background: yellow;
+}
+
+.cardMessage {
+	width: 75%;
+	height: 25%;
+	float: left;
+	background: red;
+}
+
+.card-media {
+	background-color: #999999;
+}
+
+.input-group-btn {
+	display: table-cell;
+}
+
+#bragFormLine {
+	width: 100%;
+	display: block;
+}
+
+.input-group {
+	width: 100%;
+	padding: 10px;
+}
+
+.search-box {
+	padding: 10px;
+}
+
+.postbar {
+	width: 100%;
+}
+
+.postbox {
+	width: 100%;
+}
+
+.material-icons.md-dark {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.material-icons.md-dark.md-inactive {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.category-icon {
+	margin: 0px !important;
+}
+
+#postInfo {
+	margin-top: -8px;
+	margin-right: -8px;
+}
+
+.in-line {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+md-content {
+	padding: 2px !important;
+}
+
+.md-icon-button {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+}
+
+md-card>img, md-card>:not(md-card-content) img {
+	border-radius: 5% !important;
+}
+
+md-card md-card-avatar {
+	margin-left: 0px !important;
+}
+
+md-card md-card-title {
+	padding-bottom: 0px !important;
+	padding-top: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+md-card md-card-header {
+	padding-bottom: 0px !important;
+}
+
+md-card md-card-actions {
+	padding-top: 0px !important;
+	margin-top: 0px !important;
+}
+
+md-card md-card-content {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+h4 {
+	padding-left: 0px !important;
+	font-size: 15px;
+	line-height: 20px !important;
+}
+
+h3 {
+	padding-left: 0px !important;
+	padding-top: 0px !important;
+	margin-top: 0px !important;
+	font-size: 14px;
+	color: rgba(63, 81, 181, 0.75) !important;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.margin-bottom {
+	margin-bottom: 10px !important;
+}
+
+.md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+	color: rgb(63, 81, 181);
+	background: rgb(63, 81, 181);
+}
+
+.md-tab.md-active {
+	cursor: default;
+	font-weight: bold;
+}
+
+.evidImg {
+	max-height: 400px;
+	max-width: 100%;
+	min_width: 100%;
+	position: relative;
+}
+
+.md-padding-small {
+	padding-right: 5px !important;
+	padding-left: 5px !important;
+	padding-bottom: 5px !important;
+}
+
+.center-parent {
+	text-align: center;
+	overflow: hidden;
+	background-color: #000000 !important;
+	margin-bottom: 10px !important;
+}
+
+.accountCard {
+	padding-bottom: 16px;
+}
+
+.md-button.logo {
+	height: 7rem;
+	width: 7rem;
+}
+
+.logo-image {
+	height: 100%;
+	width: 100%;
+}
+
+[ng-click], [data-ng-click], [x-ng-click] {
+	cursor: pointer;
+}
+
+md-toolbar {
+	position: fixed;
+	top: 0;
+}
+
+#mainLogo {
+	height: auto;
+	min-height: 20px;
+	width: 100px;
+}
+
+md-content.md-default-theme, md-content {
+	background-color: #f3f4ff !important;
+}
+
+md-card {
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) !important;
+	width: 100%;
+}
+
+.md-button {
+	
+}
+
+textarea {
+	height: auto;
+	resize: none;
+}
+
+.md-button
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.md-raised
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:not
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(
+[
+disabled
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
+{
+box-shadow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+1
+px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+rgba
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(0
+,
+0,
+0,
+0
+.15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
+!
+important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+}
+.md-button:not ([disabled] ).md-raised:active, md-button:not ([disabled]
+	 ).md-fab:active {
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.md-title {
+	font-size: 20px;
+	font-weight: 600 !important;
+	letter-spacing: 0.005em;
+}
+
+md-card md-card-header md-card-header-text .md-subhead {
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.md-subhead {
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	letter-spacing: 0.010em;
+	line-height: 18px !important;
+	color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.form-control:focus {
+	border-color: #b4bac1 !important;
+}
+
+.form-control {
+	float: none !important;
+	display: table-cell !important;
+	padding: 10px 15px;
+	font-size: 15px;
+	width: 100%;
+	border-bottom-left-radius: 3px !important;
+	border-top-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+	border-top-right-radius: 3px !important;
+}
+
+body {
+	background-color: #f3f4ff !important;
+}
+
+.fill-width {
+	width: 100%;
+}
+
+.introHeading {
+	margin-left: 10px !important;
+	margin-top: 0px;
+	padding-top: 4px !important;
+	font-size: 16px;
+}
+
+.introSubtext {
+	margin-left: 10px !important;
+	margin-top: 0px;
+	padding-top: 0px !important;
+	font-size: 14px;
+	line-height: 20px !important;
+}
+
+.btn-default {
+	color: #ffffff;
+	background-color: #7EB53F;
+	border-color: #7EB53F;
+}
+
+.loginModal {
+	text-align: center;
+	padding: 10px;
+	max-width: 400px;
+}
+
+[role="tabpanel"] {
+    transition: none;
+}
+
+.bragTextarea {
+	z-index: 0 !important;
+	display: block !important;
+	overflow: hidden;
+	rows: 1;
+}

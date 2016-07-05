@@ -1,0 +1,130 @@
+<md-content class="md-padding" layout="row" layout-wrap
+	layout-align="center start" layout-xs="row">
+<div flex="40" flex-sm="60" flex-xs="90" layout="row" layout-xs="row">
+	<md-card ng-show="loggedIn">
+	<div class="accountCard">
+		<md-card-header> <md-card-title> <md-card-avatar>
+		<div class="md-user-avatar">
+			<img src="{{user.userPhoto}}">
+		</div>
+		</md-card-avatar> <md-card-header-text> <span class="md-title">{{user.username
+			|| "Loading..."}}</span> <span class="md-subhead">{{user.rep || 0}}
+			Rep | {{user.brag || 0}} Brags</span> </md-card-header-text> <md-button class="md-icon-button">
+		<md-tooltip md-direction="bottom">Settings</md-tooltip> <i
+			class="material-icons md-dark">settings</i> </md-button> <md-button
+			class="md-icon-button" ng-click="logout()"> <md-tooltip
+			md-direction="bottom">Logout</md-tooltip> <i
+			class="material-icons md-dark">exit_to_app</i> </md-button> </md-card-title> </md-card-header>
+	</div>
+	</md-card>
+	<md-card ng-hide="loggedIn" class="md-padding">
+	<h4 class="introHeading">
+		<b>Welcome to BragR.</b>
+	</h4>
+	<h2 class="introSubtext">The perfect place to brag about your
+		accomplishments.</h2>
+	<h2 class="introSubtext">Landed a new Job? Got a new Car? Lost
+		some weight? Started a business? Let everyone know! Login to get
+		Started.</h2>
+	<div class="fill-width">
+		<md-button id="loginButton" class="md-raised md-primary"
+			ng-click="showLoginDialog($event)" flex> <md-icon>
+		<i class="material-icons">public</i> </md-icon> Sign Up</md-button>
+	</div>
+	</md-card>
+</div>
+</md-content>
+<md-content class="md-padding" layout="row" layout-wrap
+	layout-align="center start" layout-xs="row">
+<div flex="40" flex-sm="60" flex-xs="90" layout="row" layout-xs="row">
+	<md-card>
+	<div class="input-group">
+		<input type="text" id="search-field" class="form-control"
+			ng-model="searchString" placeholder="Start typing to search...">
+		<span class="input-group-btn">
+			<button class="btn btn-default">
+				<span class="glyphicon glyphicon-search"></span>
+			</button>
+		</span>
+	</div>
+	</md-card>
+</div>
+</md-content>
+<md-content class="md-padding" layout="row" layout-wrap
+	layout-align="center start" layout-xs="row">
+<div flex="40" flex-sm="60" flex-xs="90" layout="row" layout-xs="row">
+	<md-card ng-show="loggedIn">
+	<div class="input-group">
+		<textarea expanding-Textarea maxlength="500" rows="1" type="text"
+			ng-class="{'form-control' : true, 'margin-bottom' : showBragForm, 'bragTextarea' : true}"
+			placeholder="What do you want to Brag about?" ng-model="message"
+			required></textarea>
+		<div ng-show="showBragForm">
+			<input maxlength="200" rows="1" id="evidInputText" type="text"
+				class="form-control margin-bottom"
+				placeholder="Provide some Evidence..." ng-model="evidence"></input> <select
+				class="form-control margin-bottom" data-show-icon="true"
+				ng-model="category" required>
+				<option value="" disabled selected>Select a Category...</option>
+				<option value="1">{{categoriesList[0].name}}</option>
+				<option value="2">{{categoriesList[1].name}}</option>
+				<option value="3">{{categoriesList[2].name}}</option>
+				<option value="4">{{categoriesList[3].name}}</option>
+				<option value="5">{{categoriesList[4].name}}</option>
+				<option value="6">{{categoriesList[5].name}}</option>
+				<option value="7">{{categoriesList[6].name}}</option>
+				<option value="8">{{categoriesList[7].name}}</option>
+				<option value="9">{{categoriesList[8].name}}</option>
+				<option value="10">{{categoriesList[9].name}}</option>
+			</select>
+			<button class="btn btn-default form-control"
+				ng-click="brag(message, evidence, category)">
+				<b>Share</b>
+			</button>
+		</div>
+	</div>
+	</md-card>
+</div>
+</md-content>
+<div id="postHolder">
+	<div
+		ng-repeat="(index, post) in posts | orderBy:'postId':true | searchFor:searchString">
+		<md-content class="md-padding" layout="row" layout-wrap
+			layout-align="center start" layout-xs="row">
+		<div flex="40" flex-sm="60" flex-xs="90" layout="row" layout-xs="row">
+			<md-card> <md-card-header> <md-card-title>
+			<md-card-avatar>
+			<div class="md-user-avatar">
+				<img src="{{post.userPhoto || ''}}">
+			</div>
+			</md-card-avatar> <md-card-header-text> <span class="md-title">{{post.username
+				|| "Loading..."}}</span> <span class="md-subhead">{{post.userRep ||
+				0}} Rep | {{post.userBrag || 0}} Brags</span> </md-card-header-text>
+			<div id="postInfo">
+				<span class="md-subhead in-line">{{post.timeTxt ||
+					"Loading..."}}</span>
+				<md-button class="md-icon-button in-line category-icon">
+				<md-tooltip md-direction="bottom">{{categoriesList[post.category
+				- 1].name}}</md-tooltip> <i class="material-icons md-dark">{{categoriesList[post.category
+					- 1].icon}}</i> </md-button>
+			</div>
+			</md-card-title> </md-card-header> <md-card-content>
+			<h4>{{post.text || "Loading..."}}</h4>
+			<div class="center-parent" ng-click="openNewTab(post)"
+				ng-hide="{{post.evidenceIMG == ''}}">
+				<img class="evidImg" ng-src="{{post.evidenceIMG}}" />
+			</div>
+			<h3 ng-hide="{{post.evidenceURL == ''}}" ng-click="openNewTab(post)">{{post.evidenceURL
+				|| "Loading..."}}</h3>
+			</md-card-content> <md-card-actions layout="row" layout-align="center center"
+				class="md-padding-small"> <md-button
+				class="md-raised md-primary" ng-click="upVote(post)" flex>
+			<md-icon> <i id="upVote" class="material-icons">{{post.iconUpVote
+				|| "mood"}}</i> </md-icon> {{post.upVotes || 0}} </md-button> <md-button
+				class="md-raised md-warn" ng-click="downVote(post)" flex>
+			<md-icon> <i id="downVote" class="material-icons">{{post.iconDownVote
+				|| "mood_bad"}}</i> </md-icon> {{post.downVotes || 0}} </md-button> </md-card-actions> </md-card>
+		</div>
+		</md-content>
+	</div>
+</div>

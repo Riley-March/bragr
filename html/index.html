@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>BragR.</title>
+<meta name="viewport"
+	content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+<link type="text/css" rel="stylesheet"
+	href="../distro/css/bootstrap.css" />
+<link rel="icon" href=".././images/faviconbrag.png?v=11"
+	type="image/x-icon" />
+<link rel="shortcut icon" href=".././images/faviconbrag.png?v=11"
+	type="image/x-icon" />
+<meta name="theme-color" content="#3F51B5">
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/app.css" />
+<link rel="stylesheet" href="../distro/css/hover.css" />
+<link rel="stylesheet"
+	href="../distro/angular-material/angular-material.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<script src="../distro/angular/angular.js"></script>
+</head>
+<body ng-app="storeApp" layout="row" ng-controller="MainCtrl" ng-cloak>
+	<script type="text/ng-template" id="/html/main.html"></script>
+	<script type="text/ng-template" id="/html/login.html"></script>
+	<div flex layout="column" tabIndex="-1" role="main"
+		class="md-whiteframe-z2" posts="posts" auto-load load="loadMorePosts">
+		<md-toolbar layout="row" layout-align="center center">
+		<h1>
+			<img id="mainLogo" src="../images/logo.png" height="5%">
+		</h1>
+		</md-toolbar>
+        <md-tabs md-dynamic-height md-center-tabs md-selected="selectedIndex">
+	      	<md-tab>
+	      	 	<md-tab-label>
+	      	 		<md-icon class="in-line" md-font-library="material-icons">home</md-icon>
+      				<div class="in-line">New</div>
+   			 	</md-tab-label>
+   			 	<md-tab-body>
+        		</md-tab-body>
+	    	</md-tab>
+			<md-tab>
+	      	 	<md-tab-label>
+	      	 		<md-icon class="in-line" md-font-library="material-icons">star</md-icon>
+      				<div class="in-line">Top</div>
+   			 	</md-tab-label>
+   			 	<md-tab-body>
+        		</md-tab-body>
+	    	</md-tab>
+		   <md-tab>
+	      	 	<md-tab-label>
+	      	 		<md-icon class="in-line" md-font-library="material-icons">whatshot</md-icon>
+      				<div class="in-line">Hot</div>
+   			 	</md-tab-label>
+   			 	<md-tab-body>
+        		</md-tab-body>
+	    	</md-tab>
+		</md-tabs> 
+		<div ng-include="'main.html'" flex></div>
+	</div>
+
+	<script src="../distro/angular-animate/angular-animate.js"></script>
+	<script src="../distro/angular-aria/angular-aria.js"></script>
+	<script src="../distro/angular-material/angular-material.js"></script>
+	<script src="../distro/angular-messages/angular-messages.js"></script>
+	<script src="../distro/js/jquery-2.1.3.min.js"></script>
+	<script src="../distro/js/bootstrap.js"></script>
+	<script src="../distro/js/angular-ui-router.js"></script>
+	<script src="../distro/firebase/firebase.js"></script>
+	<script src="../distro/firebase/firebase-util.min.js"></script>
+	<script src="../distro/angularfire/dist/angularfire.min.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/ControllerManager.js"></script>
+	<script src="../js/Services.js"></script>
+	<script src="../js/Utils.js"></script>
+</body>
+</html>
